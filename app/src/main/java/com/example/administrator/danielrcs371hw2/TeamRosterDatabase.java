@@ -1,5 +1,7 @@
 package com.example.administrator.danielrcs371hw2;
 
+import android.widget.Button;
+
 import java.util.HashMap;
 
 /**
@@ -19,7 +21,7 @@ public class TeamRosterDatabase {
     public void addTeam(TeamRoster newTeam)
     {
         String key = newTeam.teamName;
-        if(totalTeams>9)
+        if(totalTeams>11)
             return;
         if(rosterDatabase.containsKey(key))
         {
@@ -48,9 +50,16 @@ public class TeamRosterDatabase {
     {
         return rosterDatabase.size();
     }
-
+    //Displays the teams in the Main Activity
     public int viewTeams()
     {
+        int counter = 1;
+        for(String key: rosterDatabase.keySet())
+        {
+            String buttonId = "team" + counter;
+            Button showName = (Button)findViewById(R.id.)
+
+        }
 
     }
 }
